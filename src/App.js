@@ -1,11 +1,11 @@
+import React from "react";
+import DictionaryApp from "./DictionaryApp";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <DictionaryApp />
     </div>
   );
 }
-
-export default App;
