@@ -9,6 +9,7 @@ export default function Dictionary() {
     console.log(response.data[0]);
   }
 
+  //Documentation: https://dictionaryapi.dev/
   function search(event) {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
