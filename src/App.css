@@ -46,9 +46,13 @@ p {
   margin-top: 40px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  /*max-width: fit-content;*/
-  width: 500px;
-  height: 500px;
+  max-width: fit-content;
+}
+
+.header-img {
+  margin: 0 auto;
+  width: 20%;
+  padding-bottom: 6px;
 }
 
 .input-form {
