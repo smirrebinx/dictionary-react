@@ -9,6 +9,23 @@
   --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+body {
+  background-image: url("../src/images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.dictionary-container {
+  background-color: #fff;
+  border: 10px outset var(--border-color);
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  max-width: fit-content;
+}
+
 h1 {
   font-family: var(--headings-font-family);
   font-size: 4em;
@@ -37,16 +54,6 @@ h1 {
 h3,
 p {
   font-size: 2em;
-}
-
-.dictionary-container {
-  background-color: #fff;
-  border: 10px outset var(--border-color);
-  margin: 0 auto;
-  margin-top: 40px;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
-  max-width: fit-content;
 }
 
 .header-img {
