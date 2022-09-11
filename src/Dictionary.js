@@ -19,7 +19,6 @@ export default function Dictionary() {
   }
 
   function handleKeywordChange(event) {
-    console.log(event.target.value);
     setKeyword(event.target.value);
   }
 
@@ -32,6 +31,7 @@ export default function Dictionary() {
               type="search"
               autoFocus={true}
               className="form-control"
+              placeholder="Search for a word"
               onChange={handleKeywordChange}
             />
           </div>
