@@ -107,13 +107,13 @@ p {
   position: relative;
 }
 
-.client-img {
+.card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.client-name {
+.word-class {
   position: absolute;
   font-family: var(--paragraph-font-family);
   font-size: 14px;
@@ -131,6 +131,14 @@ p {
   height: auto;
   margin-left: 20px;
   position: relative;
+}
+
+.description {
+  font-family: var(--paragraph-font-family);
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+  color: var(--secondary-bg-color);
 }
 
 .link {
