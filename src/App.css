@@ -80,7 +80,7 @@ p {
 }
 
 .searched-word {
-  text-align: left;
+  text-align: center;
   padding-left: 34px;
   font-weight: bold;
 }
@@ -94,7 +94,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: 0 10px;
+  margin: 0 auto;
   box-shadow: var(--box-shadow);
 }
 
