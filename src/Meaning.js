@@ -1,5 +1,6 @@
 import React from "react";
 import bookPile from "./images/bookPile.jpg";
+import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
   console.log(props.meaning);
@@ -24,6 +25,7 @@ export default function Meaning(props) {
               <p>
                 <em>{definition.example}</em>
               </p>
+              <Synonyms synonyms={definition.synonyms} />
             </div>
           </div>
         );
