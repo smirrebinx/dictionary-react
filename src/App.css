@@ -56,6 +56,11 @@ p {
   font-size: 2em;
 }
 
+.suggested-words {
+  font-size: 1.5em;
+  text-align: left;
+}
+
 .header-img {
   margin: 0 auto;
   width: 20%;
