@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
 
-export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
+export default function Dictionary(props) {
+  let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     setResults(response.data[0]);
@@ -13,38 +14,58 @@ export default function Dictionary() {
 
   //Documentation: https://dictionaryapi.dev/
   function search(event) {
-    event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
 
-  return (
-    <div className="container">
-      <form onSubmit={search}>
-        <div className="row">
-          <div className="col-9 input-form mb-4">
-            <input
-              type="search"
-              autoFocus={true}
-              className="form-control"
-              placeholder="Search for a word"
-              onChange={handleKeywordChange}
-            />
+  function load() {
+    setLoaded(true);
+    search();
+  }
+
+  if (loaded) {
+    return (
+      <div className="container">
+        <form onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-9 input-form mb-4">
+              <input
+                type="search"
+                autoFocus={true}
+                className="form-control"
+                placeholder="Search for a word"
+                onChange={handleKeywordChange}
+                defaultValue={props.defaultKeyword}
+              />
+            </div>
+            <div className="col-3">
+              <input
+                type="submit"
+                value="Search"
+                className="form-control btn btn-outline-secondary shadow-sm search-button"
+              />
+            </div>
           </div>
-          <div className="col-3">
-            <input
-              type="submit"
-              value="Search"
-              className="form-control btn btn-outline-secondary shadow-sm search-button"
-            />
-          </div>
+        </form>
+        <div>
+          <p className="suggested-words">
+            <em>Suggested words: wine, food, animal</em>
+          </p>
         </div>
-      </form>
-      <SearchResults results={results} />
-    </div>
-  );
+        <SearchResults results={results} />
+      </div>
+    );
+  } else {
+    load();
+    return "Loading";
+  }
 }
