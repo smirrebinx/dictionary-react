@@ -23,13 +23,16 @@ body {
   margin-top: 40px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-  max-width: fit-content;
+  max-width: 60%;
 }
 
 h1 {
   font-family: var(--headings-font-family);
   font-size: 4em;
   font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0px;
 }
 
 h2,
@@ -45,15 +48,9 @@ p {
   text-align: center;
 }
 
-h1 {
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding: 0px;
-}
-
 h3,
 p {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .suggested-words {
@@ -203,5 +200,9 @@ footer .logo {
 
   .logo {
     display: none;
+  }
+
+  .dictionary-container {
+    max-width: fit-content;
   }
 }
