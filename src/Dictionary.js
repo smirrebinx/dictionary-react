@@ -26,7 +26,7 @@ export default function Dictionary(props) {
 
     let pexelsApiKey =
       "563492ad6f9170000100000117b7f79167cf469bb3ba291b1fdb17d5";
-    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=12`;
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
     axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
   }
@@ -48,34 +48,38 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="container">
-        <form onSubmit={handleSubmit}>
-          <div className="row">
-            <div className="col-9 input-form mb-2">
-              <input
-                type="search"
-                autoFocus={true}
-                className="form-control"
-                placeholder="Search for a word"
-                onChange={handleKeywordChange}
-                defaultValue={props.defaultKeyword}
-              />
+        <div className="dictionary">
+          <section>
+            <form onSubmit={handleSubmit}>
+              <div className="row">
+                <div className="col-9 input-form mb-2">
+                  <input
+                    type="search"
+                    autoFocus={true}
+                    className="form-control"
+                    placeholder="Search for a word"
+                    onChange={handleKeywordChange}
+                    defaultValue={props.defaultKeyword}
+                  />
+                </div>
+                <div className="col-3">
+                  <input
+                    type="submit"
+                    value="Search"
+                    className="form-control btn btn-outline-secondary shadow-sm search-button"
+                  />
+                </div>
+              </div>
+            </form>
+            <div>
+              <p className="suggested-words">
+                <em>Suggested words: wine, food, animal</em>
+              </p>
             </div>
-            <div className="col-3">
-              <input
-                type="submit"
-                value="Search"
-                className="form-control btn btn-outline-secondary shadow-sm search-button"
-              />
-            </div>
-          </div>
-        </form>
-        <div>
-          <p className="suggested-words">
-            <em>Suggested words: wine, food, animal</em>
-          </p>
+          </section>
+          <SearchResults results={results} />
+          <Photos photos={photos} />
         </div>
-        <SearchResults results={results} />
-        <Photos photos={photos} />
       </div>
     );
   } else {

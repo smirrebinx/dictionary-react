@@ -10,6 +10,14 @@
   --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.dictionary section {
+  padding: 30px;
+  margin: 20px 0;
+  background-color: var(--secondary-bg-color);
+  box-shadow: var() --box-shadow;
+  border-radius: 6px;
+}
+
 .input-form {
   padding-left: 32px;
 }
