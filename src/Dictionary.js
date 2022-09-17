@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
 import Photos from "./Photos";
+import "./Dictionary.css";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -49,7 +50,7 @@ export default function Dictionary(props) {
       <div className="container">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-9 input-form mb-4">
+            <div className="col-9 input-form mb-2">
               <input
                 type="search"
                 autoFocus={true}

@@ -1,0 +1,62 @@
+/*react-dictionary-app*/
+
+:root {
+  --headings-font-family: "Xanh Mono", monospace;
+  --paragraph-font-family: "Xanh Mono", monospace;
+  --border-color: #94b1aa;
+  --primary-bg-color: #94b1aa;
+  --secondary-bg-color: #f4f6f6;
+  --primary-text-color: #000;
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.word-class {
+  font-family: var(--paragraph-font-family);
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.card {
+  display: flex;
+  width: 400px;
+  min-height: 100%;
+  background: transparent;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+}
+
+.card-thumb {
+  width: 70%;
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  width: 120%;
+  min-height: 100%;
+  height: auto;
+  margin-left: 20px;
+  position: relative;
+}
+
+.synonyms {
+  font-family: var(--paragraph-font-family);
+}
+
+ul {
+  list-style: none;
+}
