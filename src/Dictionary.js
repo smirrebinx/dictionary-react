@@ -46,32 +46,34 @@ export default function Dictionary(props) {
     search();
   }
 
+  let form = (
+    <form onSubmit={handleSubmit}>
+      <div className="row">
+        <div className="col-9 input-form mb-2">
+          <input
+            type="search"
+            autoFocus={true}
+            className="form-control"
+            onChange={handleKeywordChange}
+            defaultValue={props.defaultKeyword}
+          />
+        </div>
+        <div className="col-3">
+          <input
+            type="submit"
+            value="Search"
+            className="form-control btn btn-outline-secondary shadow-sm search-button"
+          />
+        </div>
+      </div>
+    </form>
+  );
+
   if (loaded) {
     return (
       <div className="container">
         <div className="dictionary">
-          <section>
-            <form onSubmit={handleSubmit}>
-              <div className="row">
-                <div className="col-9 input-form mb-2">
-                  <input
-                    type="search"
-                    autoFocus={true}
-                    className="form-control"
-                    onChange={handleKeywordChange}
-                    defaultValue={props.defaultKeyword}
-                  />
-                </div>
-                <div className="col-3">
-                  <input
-                    type="submit"
-                    value="Search"
-                    className="form-control btn btn-outline-secondary shadow-sm search-button"
-                  />
-                </div>
-              </div>
-            </form>
-          </section>
+          <section>{form}</section>
           <SearchResults results={results} />
           <Photos photos={photos} />
         </div>
