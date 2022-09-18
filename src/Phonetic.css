@@ -43,3 +43,19 @@ audio::-webkit-media-controls-panel {
     margin-left: 25px;
   }
 }
+
+@media (max-width: 1000px) {
+  .phonetic-text {
+    position: relative;
+    top: -11px;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .phonetic-text {
+    position: relative;
+    top: -4px;
+    margin-left: 25px;
+  }
+}
