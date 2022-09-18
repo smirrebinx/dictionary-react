@@ -50,13 +50,16 @@ export default function Dictionary(props) {
     <form onSubmit={handleSubmit}>
       <div className="row">
         <div className="col-9 input-form mb-2">
-          <input
-            type="search"
-            autoFocus={true}
-            className="form-control"
-            onChange={handleKeywordChange}
-            defaultValue={props.defaultKeyword}
-          />
+          <label for="search-for-word">
+            <input
+              type="search"
+              name="search-for-word"
+              autoFocus={true}
+              className="form-control"
+              onChange={handleKeywordChange}
+              defaultValue={props.defaultKeyword}
+            />
+          </label>
         </div>
         <div className="col-3">
           <input
