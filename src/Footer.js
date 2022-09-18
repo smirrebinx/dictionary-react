@@ -13,12 +13,7 @@ export default function Footer() {
           <div className="footer-container">
             <div className="d-flex justify-content-center">
               <div className="ml-5 mt-3">
-                <img
-                  src={a_cat}
-                  alt="Logo, black cat"
-                  title="Logo, black cat"
-                  className="logo"
-                />
+                <img src={a_cat} alt="Logo, black cat" className="logo" />
                 <span className="logoTextSpan ml-3 mr-5">
                   Michelle Wegler 2022, open source
                 </span>

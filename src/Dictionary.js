@@ -73,7 +73,11 @@ export default function Dictionary(props) {
     return (
       <div className="container">
         <div className="dictionary">
-          <section>{form}</section>
+          <section>
+            {" "}
+            <h2 className="search-header">Search</h2>
+            {form}
+          </section>
           <SearchResults results={results} />
           <Photos photos={photos} />
         </div>
