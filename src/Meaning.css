@@ -12,7 +12,6 @@
 
 .word-class {
   font-family: var(--paragraph-font-family);
-  text-transform: capitalize;
   font-weight: bold;
   font-size: 1.3em;
 }
@@ -40,4 +39,9 @@
   max-width: 200px;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.word-class,
+.synonyms :first-letter {
+  text-transform: capitalize;
 }
