@@ -17,7 +17,7 @@ export default function Photos(props) {
                   <img
                     src={photo.src.landscape}
                     className="img-fluid mb-4 searched-word-images"
-                    alt={photo.src.photographer}
+                    alt={photo.alt}
                   />
                 </a>
               </div>
