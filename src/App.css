@@ -126,6 +126,18 @@ footer .logo {
   }
 
   .dictionary-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .dictionary-container {
+    max-width: fit-content;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dictionary-container {
     max-width: fit-content;
   }
 }

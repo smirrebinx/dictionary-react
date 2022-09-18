@@ -49,7 +49,7 @@ export default function Dictionary(props) {
   let form = (
     <form onSubmit={handleSubmit}>
       <div className="row">
-        <div className="col-6 input-form mb-2">
+        <div className="col-md-8 input-form">
           <label for="search-for-word">
             <h2 className="search-for-word">Search</h2>
             <input
@@ -63,7 +63,7 @@ export default function Dictionary(props) {
             />
           </label>
         </div>
-        <div className="col-3">
+        <div className="col-sm-2">
           <input
             type="submit"
             value="Search"

@@ -38,3 +38,10 @@
 .search-button:hover {
   background-color: rgb(44, 138, 138);
 }
+
+@media (max-width: 1000px) {
+  .search-button {
+    bottom: -7px;
+    margin-left: 20px;
+  }
+}
