@@ -17,5 +17,12 @@
 }
 
 audio::-webkit-media-controls-panel {
-  background: var(--primary-bg-color);
+  background: linear-gradient(
+    to right,
+    #94b1aa,
+    #a3ccc2,
+    #bce4da,
+    #9ac2b8,
+    #5c7e76
+  );
 }
