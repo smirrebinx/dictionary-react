@@ -25,4 +25,21 @@ audio::-webkit-media-controls-panel {
     #9ac2b8,
     #5c7e76
   );
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  audio {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    object-fit: contain;
+  }
+
+  .phonetic-text {
+    position: relative;
+    top: -4px;
+    margin-left: 25px;
+  }
 }

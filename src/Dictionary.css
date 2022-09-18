@@ -31,6 +31,8 @@
 .search-button {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+  position: relative;
+  bottom: -36px;
 }
 
 .search-button:hover {
