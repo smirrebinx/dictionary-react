@@ -18,7 +18,7 @@ export default function DictionaryApp() {
           </div>
         </header>
         <div>
-          <Dictionary defaultKeyword="cat" />
+          <Dictionary defaultKeyword="champagne" />
           <div className="col text-center"></div>
         </div>
       </div>
