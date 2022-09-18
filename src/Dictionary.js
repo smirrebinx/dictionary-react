@@ -51,7 +51,6 @@ export default function Dictionary(props) {
       <div className="row">
         <div className="col-9 input-form mb-2">
           <label for="search-for-word">
-            <h2 className="search-for-word">Search</h2>
             <input
               type="search"
               name="search-for-word"
@@ -78,7 +77,11 @@ export default function Dictionary(props) {
     return (
       <div className="container">
         <div className="dictionary">
-          <section>{form}</section>
+          <section>
+            {" "}
+            <h2 className="search-for-word">Search</h2>
+            {form}
+          </section>
           <SearchResults results={results} />
           <Photos photos={photos} />
         </div>
