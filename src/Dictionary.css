@@ -30,9 +30,3 @@
 .search-button:hover {
   background-color: rgb(44, 138, 138);
 }
-
-.suggested-words {
-  font-size: 1em;
-  text-align: left;
-  padding-left: 22px;
-}
