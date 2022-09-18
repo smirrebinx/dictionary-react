@@ -19,8 +19,25 @@
 
 .synonyms {
   font-family: var(--paragraph-font-family);
+  font-weight: 600;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
-ul {
-  list-style: none;
+.definition {
+  font-family: var(--paragraph-font-family);
+  font-weight: 600;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.example {
+  font-family: var(--paragraph-font-family);
+  font-style: italic;
+  font-weight: 600;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }

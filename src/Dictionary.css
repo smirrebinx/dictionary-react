@@ -12,10 +12,11 @@
 
 .dictionary section {
   padding: 30px;
-  margin: 20px 0;
+  margin: 20px auto;
   background-color: var(--secondary-bg-color);
-  box-shadow: var() --box-shadow;
+  box-shadow: var(--box-shadow);
   border-radius: 6px;
+  max-width: 500px;
 }
 
 .input-form {
