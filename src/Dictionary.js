@@ -58,7 +58,6 @@ export default function Dictionary(props) {
                     type="search"
                     autoFocus={true}
                     className="form-control"
-                    placeholder="Search for a word"
                     onChange={handleKeywordChange}
                     defaultValue={props.defaultKeyword}
                   />
