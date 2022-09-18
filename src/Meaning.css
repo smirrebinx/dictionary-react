@@ -11,32 +11,28 @@
 }
 
 .word-class {
-  font-family: var(--paragraph-font-family);
   font-weight: bold;
   font-size: 1.3em;
 }
 
-.synonyms {
-  font-family: var(--paragraph-font-family);
-  font-weight: 600;
-  max-width: 200px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
 .definition {
-  font-family: var(--paragraph-font-family);
   font-weight: 600;
-  max-width: 200px;
+  max-width: 400px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
 .example {
-  font-family: var(--paragraph-font-family);
   font-style: italic;
   font-weight: 600;
-  max-width: 200px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.synonyms {
+  font-weight: 600;
+  max-width: 400px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -44,4 +40,14 @@
 .word-class,
 .synonyms :first-letter {
   text-transform: capitalize;
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  text-align: left;
 }
