@@ -30,7 +30,7 @@ audio::-webkit-media-controls-panel {
 }
 
 @media (max-width: 900px) {
-  audio {
+  audio::-webkit-media-controls-panel {
     max-height: 100%;
     max-width: 100%;
     margin: auto;
