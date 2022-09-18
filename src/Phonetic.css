@@ -1,5 +1,21 @@
 /*react-dictionary-app*/
 
-/*.phonetic {
-  margin: 0 auto;
-}*/
+:root {
+  --headings-font-family: "Xanh Mono", monospace;
+  --paragraph-font-family: "Xanh Mono", monospace;
+  --border-color: #94b1aa;
+  --primary-bg-color: #94b1aa;
+  --secondary-bg-color: #f4f6f6;
+  --primary-text-color: #000;
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.phonetic-text {
+  position: relative;
+  top: -20px;
+  margin-left: 25px;
+}
+
+audio::-webkit-media-controls-panel {
+  background: var(--primary-bg-color);
+}
