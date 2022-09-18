@@ -121,6 +121,10 @@ footer .logo {
     display: none;
   }
 
+  .footer-container {
+    max-width: 300px;
+  }
+
   .dictionary-container {
     max-width: fit-content;
   }
